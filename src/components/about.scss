@@ -1,0 +1,65 @@
+
+.about {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+  
+    .left {
+      flex: 1;
+      overflow: hidden;
+      color: white;
+  
+      h2 {
+        padding: 12.5px 50px;
+        font-weight: 700;
+      }
+  
+      .logo {
+        font-size: 40px;  
+        padding: 12.5px 50px;
+      }
+  
+      .logo2 {
+        width: 95px;
+        padding: 12.5px 50px;
+      }
+  
+      h4 {
+        padding: 0 50px 2.5px 50px;
+      }
+  
+      p {
+        padding: 0 50px;
+      }
+  
+      .p-under-orion-logo {
+        padding: 0 50px 12.5px 50px;
+      }
+  
+      ul {
+      list-style-type: none;
+      padding: 0 50px;
+      }
+  
+      img {
+        width: 95px;
+        padding: 12.5px 50px 0 50px;
+      }
+    }
+  
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  
