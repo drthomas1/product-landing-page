@@ -1,0 +1,23 @@
+
+.thumb-and-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 7.5px;
+    margin-bottom: 7.5px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 7.5px;
+    cursor: pointer;
+
+    img {
+        background: black;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 7.5px 0 0 7.5px;
+    }
+
+    h5 {
+        color: white;
+        margin-top: 2.5px;
+    }
+}

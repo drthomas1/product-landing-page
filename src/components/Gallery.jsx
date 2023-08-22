@@ -11,7 +11,7 @@ import 'swiper/css/thumbs';
 import './gallery.css';
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { FreeMode, Navigation, Thumbs, Pagination } from 'swiper/modules';
 
 export default function Gallery() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -25,10 +25,15 @@ export default function Gallery() {
         }}
         loop={true}
         speed={900}
-        spaceBetween={10}
         navigation={true}
+        slidesPerView={'auto'}
+        centeredSlides={true}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
         thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}} //fixed the issue https://stackoverflow.com/questions/73046820/swiper-react-cannot-convert-undefined-or-null-to-object
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Navigation, Thumbs, Pagination]}
         className="mySwiper2"
       >
         <h1>GALLERY</h1>
@@ -67,7 +72,7 @@ export default function Gallery() {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}

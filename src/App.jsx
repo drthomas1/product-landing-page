@@ -5,6 +5,8 @@ import Purchase from "./components/Purchase";
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Related from "./components/Related";
+import VideoGallery from "./components/VideoGallery";
+import Test from "./components/Test";
 import Footer from "./components/Footer";
 import './App.scss';
 import { useState } from "react";
@@ -19,6 +21,8 @@ function App() {
         <Intro />
         <Purchase/>
         <About />
+        <VideoGallery />
+        <Test />
         <Gallery />
         <Related />
         <Footer />
