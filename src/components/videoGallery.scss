@@ -1,5 +1,4 @@
 .video-gallery {
-    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +137,7 @@
 
 
     .left {
-        margin-left: 50px;
+        padding-left: 150px;
         z-index: 7;
         min-width: 250px;
         position: absolute;
@@ -147,6 +146,7 @@
             padding: 12.5px 0;
             font-weight: 700;
             text-align: left;
+            color: white;
         }
 
         .playlist {
@@ -173,6 +173,8 @@
                 h5 {
                     color: white;
                     margin-top: 2.5px;
+                    max-width: 100px;
+                    text-align: left;
                 }
             }
         }

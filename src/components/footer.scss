@@ -1,10 +1,10 @@
-.footer {
+#footer {
+    height: calc(50vh - 35px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 40vh;
 
     .logo {
         font-size: 65px;

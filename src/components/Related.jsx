@@ -1,8 +1,8 @@
 import "./related.scss";
 
 export default function Related() {
-  const backImage = 'assets/excalibur-behind-the-movie.jpg'
-  const backImage2 = 'assets/john-boorman-photo.jpg';
+  const backImage = 'assets/excalibur-poster7.jpg'
+  const backImage2 = 'assets/john-boorman-photo2.jpg';
   return (
     <div className="related" id="related">
       <div className="left" style={{ backgroundImage: `url('${backImage}')` }}>

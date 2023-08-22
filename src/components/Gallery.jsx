@@ -8,7 +8,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import './gallery.css';
+import './gallery.scss';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs, Pagination } from 'swiper/modules';
@@ -17,7 +17,8 @@ export default function Gallery() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <>
+    <div className='gallery'>
+      <h1>GALLERY</h1>
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -28,7 +29,7 @@ export default function Gallery() {
         navigation={true}
         slidesPerView={'auto'}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={0}
         pagination={{
           clickable: true,
         }}
@@ -36,7 +37,6 @@ export default function Gallery() {
         modules={[FreeMode, Navigation, Thumbs, Pagination]}
         className="mySwiper2"
       >
-        <h1>GALLERY</h1>
         <SwiperSlide>
           <img src="assets/excalibur1.jpg" alt="excalibur1" />
         </SwiperSlide>
@@ -109,6 +109,6 @@ export default function Gallery() {
           <img src="assets/excalibur10.png" alt="excalibur10 thumbnail" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

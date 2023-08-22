@@ -2,49 +2,53 @@
 .about {
     background-color: black;
     display: flex;
-    height: 100vh;
   
     .left {
       flex: 1;
       overflow: hidden;
       color: white;
+
+      .left-inner{
+        display: flex;
+        flex-direction: column;
+      }
   
-      h2 {
-        padding: 12.5px 50px;
+      h1 {
+        padding: 12.5px 0 12.5px 0;
         font-weight: 700;
       }
   
       .logo {
         font-size: 40px;  
-        padding: 12.5px 50px;
+        padding: 12.5px 0 12.5px 0;
       }
   
       .logo2 {
         width: 95px;
-        padding: 12.5px 50px;
+        padding: 12.5px 0 12.5px 0;
       }
   
       h4 {
-        padding: 0 50px 2.5px 50px;
-      }
-  
-      p {
-        padding: 0 50px;
+        padding-bottom: 2.5px;
       }
   
       .p-under-orion-logo {
-        padding: 0 50px 12.5px 50px;
+        padding-bottom: 12.5px;
       }
   
       ul {
       list-style-type: none;
-      padding: 0 50px;
+      padding: 0;
       }
   
       img {
         width: 95px;
-        padding: 12.5px 50px 0 50px;
+        padding-top: 12.5px;
       }
+    }
+
+    p, ul {
+      line-height: 1.4;
     }
   
     .right {

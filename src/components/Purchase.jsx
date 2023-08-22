@@ -21,6 +21,7 @@ export default function Purchase() {
           <img src="assets/excalibur-blu-ray.png" alt="" />
         </div>
       </div>
+      <div className="gradient"></div>
     </div>
   );
 }

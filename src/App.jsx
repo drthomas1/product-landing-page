@@ -22,7 +22,7 @@ function App() {
         <Purchase/>
         <About />
         <VideoGallery />
-        <Test />
+        {/* <Test /> */}
         <Gallery />
         <Related />
         <Footer />

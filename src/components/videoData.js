@@ -32,5 +32,23 @@
             alt: 'movie thumbnail',
             title: 'Movie Clip 2',
           },
+          {
+            id: 5,
+            backGr: 'assets/excalibur-background2.png',
+            thumb: 'assets/excalibur-background2.png',
+            videoSrc: 'https://www.youtube.com/embed/fa9awvFBY',
+            alt: 'movie thumbnail',
+            title: 'Where Hides Evil?',
+          },
+          {
+            id: 6,
+            backGr: 'assets/excalibur-background2.png',
+            thumb: 'assets/excalibur-background2.png',
+            videoSrc: 'https://www.youtube.com/embed/4gO9OFumO8U',
+            alt: 'movie thumbnail',
+            title: 'Movie Clip 2',
+          },
+
+          
         
       ];
