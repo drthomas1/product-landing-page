@@ -6,22 +6,27 @@ export default function Footer() {
   return (
     <div className="footer" id="footer">
       <SiWarnerbros className='logo' />
+      <br />
       <div className="text-container">
-        <h4>HOME</h4>
-        <h4>MOVIES</h4>
-        <h4>TV SHOWS</h4>
-        <h4>ABOUT</h4>
-        <h4>CAREERS</h4>
-        <h4>CULTURE</h4>
-        <h4>CLASSICS</h4>
+        <h5>HOME</h5>
+        <h5>MOVIES</h5>
+        <h5>TV SHOWS</h5>
+        <h5>ABOUT</h5>
+        <h5>CAREERS</h5>
+        <h5>CULTURE</h5>
+        <h5>CLASSICS</h5>
       </div>
-      <h4 className="follow">FOLLOW WARNER BROTHERS</h4>
+      <br />
+      <br />
+      <h5>FOLLOW WARNER BROTHERS</h5>
+      <br />
       <div className="item-container">
         <BsTwitter className='icon' />
         <BsFacebook className='icon' />
         <BsYoutube className='icon' />
         <BsInstagram className='icon' />
       </div>
+      <br />
       <p>Lorem ipsum dolor ipsum dolor lorem ipsum dolor nintendo sega mastersystem geronimo pincnics fidelity dignity forsooth grain silo twenty Privacy Policy</p>
     </div>
   );

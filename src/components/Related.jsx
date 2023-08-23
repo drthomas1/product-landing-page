@@ -1,7 +1,7 @@
 import "./related.scss";
 
 export default function Related() {
-  const backImage = 'assets/excalibur-poster7.jpg'
+  const backImage = 'assets/excalibur-poster8.jpg'
   const backImage2 = 'assets/john-boorman-photo2.jpg';
   return (
     <div className="related" id="related">
@@ -24,5 +24,3 @@ export default function Related() {
     </div>
   );
 }
-
-// assets/john-boorman-photo.jpg

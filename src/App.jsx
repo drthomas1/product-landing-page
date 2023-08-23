@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import Related from "./components/Related";
 import VideoGallery from "./components/VideoGallery";
 import Test from "./components/Test";
+import SignUp from './components/SignUp';
 import Footer from "./components/Footer";
 import './App.scss';
 import { useState } from "react";
@@ -25,6 +26,7 @@ function App() {
         {/* <Test /> */}
         <Gallery />
         <Related />
+        <SignUp />
         <Footer />
       </div>
     </div>

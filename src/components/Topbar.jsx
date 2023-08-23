@@ -17,6 +17,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <a href="intro" className='movies-tv'>MOVIES</a>
             <a href="intro" className='movies-tv'>TV</a>
+            <a href="intro" className='movies-tv'>EXPLORE</a>
           </div>
         </div>
         <div className="right">

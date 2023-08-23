@@ -4,7 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: black;
+    color: white;
 
     .logo {
         font-size: 65px;
@@ -12,21 +13,15 @@
 
     .text-container {
         display: flex;
-        padding: 25px 0;
 
-        h4 {
+        h5 {
             margin-right: 15px;
             cursor: pointer;
         }
     }
 
-    .follow {
-        padding-bottom: 12.5px;
-    }
-
     .item-container {
         display: flex;
-        padding-bottom: 25px;
 
         .icon {
             font-size: 40px;

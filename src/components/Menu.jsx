@@ -22,6 +22,9 @@ export default function Menu( { menuOpen, setMenuOpen } ) {
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
                 <a href="#contact">Related</a>
             </li>
+            <li onClick={ ()=>setMenuOpen(!menuOpen) } >
+                <a href="#contact">Sign Up</a>
+            </li>
         </ul>
     </div>
   )

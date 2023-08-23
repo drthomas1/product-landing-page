@@ -104,6 +104,7 @@ export default function VideoGallery() {
       </div> */}
       <div className="left">
         <h1>VIDEOS</h1>
+        <br />
         <div className="playlist">
           <div className="thumb-and-title" onClick={handleClick1}>
             <img src="assets/excalibur-background1.jpg" alt="excalibur9" />

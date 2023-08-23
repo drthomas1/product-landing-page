@@ -1,0 +1,49 @@
+#signup {
+    height: calc(50vh - 35px);
+    background: white;
+    display: flex;
+    gap: 25px;
+
+    .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 150px;
+
+        p {
+            line-height: 1.4;
+        }
+
+        .date-container {
+            display: flex;
+            gap: 25px;
+            
+        }
+
+        button {
+            background: none;
+            color: black;
+            border: 2px solid black;
+            font-weight: 700;
+            padding: 12.5px 50px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 150px;
+
+        .logos {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+}

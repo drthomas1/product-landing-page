@@ -11,45 +11,45 @@
       .left-inner{
         display: flex;
         flex-direction: column;
-      }
-  
-      h1 {
-        padding: 12.5px 0 12.5px 0;
-        font-weight: 700;
-      }
-  
-      .logo {
-        font-size: 40px;  
-        padding: 12.5px 0 12.5px 0;
-      }
-  
-      .logo2 {
-        width: 95px;
-        padding: 12.5px 0 12.5px 0;
-      }
-  
-      h4 {
-        padding-bottom: 2.5px;
-      }
-  
-      .p-under-orion-logo {
-        padding-bottom: 12.5px;
-      }
-  
-      ul {
-      list-style-type: none;
-      padding: 0;
-      }
-  
-      img {
-        width: 95px;
-        padding-top: 12.5px;
-      }
-    }
+        padding: 50px 100px 0 150px;
 
-    p, ul {
-      line-height: 1.4;
-    }
+        p, ul {
+          line-height: 1.4;
+        }
+
+        h4 {
+          padding-bottom: 3.5px;
+        }
+
+        ul {
+          list-style-type: none;
+          word-spacing: 1.5px;
+          padding: 0;
+          }
+
+        .logo-container{
+          display: flex;
+          gap: 15px;
+          
+          .logo {
+            width: auto;
+            height: 45px;
+          }
+        }
+
+        .minor-info-container{
+          display: flex;
+          flex-direction: column;
+
+          img {
+            width: auto;
+            max-width: 76.125px;
+            height: 35px;
+          }
+        }
+      }
+  }
+
   
     .right {
       flex: 1;
