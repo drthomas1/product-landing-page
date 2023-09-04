@@ -24,9 +24,9 @@ export default function SignUp() {
     
     function assignNum(){
       let num;
-      let themsg = document.getElementById("day").value;
-      if (themsg){
-          num = themsg;
+      let inputVal = document.getElementById("day").value;
+      if (inputVal){
+          num = inputVal;
           setDayNum(num);
       }
       else{
@@ -37,9 +37,9 @@ export default function SignUp() {
 
   function assignNumMonth(){
     let num;
-    let themsg = document.getElementById("month").value;
-    if (themsg){
-        num = themsg;
+    let inputVal = document.getElementById("month").value;
+    if (inputVal){
+        num = inputVal;
         setMonthNum(num);
     }
     else{
@@ -50,9 +50,9 @@ export default function SignUp() {
 
 function assignNumYear(){
   let num;
-  let themsg = document.getElementById("year").value;
-  if (themsg){
-      num = themsg;
+  let inputVal = document.getElementById("year").value;
+  if (inputVal){
+      num = inputVal;
       setYearNum(num);    
   }
   else{

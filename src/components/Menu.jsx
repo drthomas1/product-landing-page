@@ -8,22 +8,22 @@ export default function Menu( { menuOpen, setMenuOpen } ) {
                 <a href="#intro">Intro</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#portfolio">Purchase</a>
+                <a href="#purchase">Purchase</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#works">About</a>
+                <a href="#about">About</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#testimonials">Video</a>
+                <a href="#video">Video</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#contact">Gallery</a>
+                <a href="#gallery">Gallery</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#contact">Related</a>
+                <a href="#related">Related</a>
             </li>
             <li onClick={ ()=>setMenuOpen(!menuOpen) } >
-                <a href="#contact">Sign Up</a>
+                <a href="#signup">Sign Up</a>
             </li>
         </ul>
     </div>

@@ -2,7 +2,7 @@
 .about {
     background-color: black;
     display: flex;
-  
+
     .left {
       flex: 1;
       overflow: hidden;
@@ -11,7 +11,8 @@
       .left-inner{
         display: flex;
         flex-direction: column;
-        padding: 50px 100px 0 150px;
+        margin: 50px 10% 0 20%;
+        
 
         p, ul {
           line-height: 1.4;
@@ -66,4 +67,12 @@
       }
     }
   }
-  
+
+  @media only screen and (max-width: 760px) {
+    #about {
+        
+    }
+}
+
+@media only screen and (max-width: 360px) {
+}

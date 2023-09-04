@@ -17,7 +17,7 @@ export default function Gallery() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className='gallery'>
+    <div className='gallery' id='gallery'>
       <h1>GALLERY</h1>
       <Swiper
         style={{

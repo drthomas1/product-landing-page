@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import { BsYoutube } from "react-icons/bs";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
@@ -58,7 +57,7 @@ export default function VideoGallery() {
 
 
   return (
-    <div className="video-gallery" style={{ backgroundImage: `url('${backImage}')` }}>
+    <div className="video-gallery" id='video' style={{ backgroundImage: `url('${backImage}')` }}>
       <div onClick={openModal} className="video-button">
           <BsYoutube className="icons" />
         {modal ? (

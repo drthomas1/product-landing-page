@@ -18,8 +18,32 @@
 
         .date-container {
             display: flex;
-            gap: 25px;
-            
+
+            div {
+
+                margin-right: 20px;
+                overflow: hidden;
+
+                input {
+                    width: 100%;
+                    
+                }
+
+                input[type=number]::-webkit-inner-spin-button, 
+                input[type=number]::-webkit-outer-spin-button { 
+                    -webkit-appearance: none; 
+                    margin: 0; 
+                }
+
+                input[type=number] {
+                    -moz-appearance:textfield;
+                }
+
+                input:focus {
+                outline: none;
+                border-bottom: 2px solid #ff9f80;
+                }
+            }
         }
 
         button {
@@ -40,10 +64,23 @@
         align-items: center;
         margin-right: 150px;
 
-        .logos {
+        img {
             max-width: 100%;
             height: auto;
             max-height: 100%;
         }
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    #signup {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 24px;
     }
 }

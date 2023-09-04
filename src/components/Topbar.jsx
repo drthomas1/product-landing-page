@@ -7,7 +7,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     <div className={'topbar ' + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className='logo'><SiWarnerbros/></a>
+          <a href="intro" className='logo'><SiWarnerbros/></a>
           <div className="itemContainer">
             <BsTwitter className='icon' />
             <BsFacebook className='icon' />
@@ -15,9 +15,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <BsInstagram className='icon' />
           </div>
           <div className="itemContainer">
-            <a href="intro" className='movies-tv'>MOVIES</a>
-            <a href="intro" className='movies-tv'>TV</a>
-            <a href="intro" className='movies-tv'>EXPLORE</a>
+            <p className='movies-tv'>MOVIES</p>
+            <p className='movies-tv'>TV</p>
+            <p className='movies-tv'>EXPLORE</p>
           </div>
         </div>
         <div className="right">

@@ -1,5 +1,6 @@
 .intro{
     width: 100%;
+    background-color: black;
 
     .content {
         position: absolute;
@@ -11,10 +12,18 @@
         justify-content: center;
         align-items: center;
         color: white;
+        padding: 0 12.5px 0 12.5px;
+        box-sizing: border-box;
 
         #icon1 {
             position: relative;
             top: 75px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
         }
 
         a {
@@ -48,4 +57,29 @@
         background-color: rgba(0,0,0,.4);
         /* background-color: #000000cc; */
       }
+
+
+      @media only screen and (max-width: 800px) {
+        #icon1 {
+            margin-bottom: 25px;
+            max-width: 50%;
+        }
+        
+        .bg-video {
+            display:none !important;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        #icon1 {
+            margin-bottom: 50px;
+        }
+
+        button {
+            margin-top: 50px;
+        }
+    }
+
+
 }
