@@ -150,7 +150,7 @@ function validDate() {
         <button id="the-button">NEXT</button>
       </div>
       <div className="right">
-        <img src="/assets/warnerbros.png" className="logos" id="icon1" alt="warnerbros" />
+        <img src="/assets/excalibur logo2.webp" className="logos" id="icon1" alt="warnerbros" />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@
     width: 100vw;
     overflow-x: hidden;
     height: calc(100vh - 70px);
-    background-color: white;
+    background-color: black;
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
@@ -22,5 +22,21 @@
         width: 100vw;
         height: calc(100vh - 70px);
         scroll-snap-align: start;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .sections {
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        scrollbar-width: none; // for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    
+        > *{
+            scroll-snap-align: none;
+        }
     }
 }

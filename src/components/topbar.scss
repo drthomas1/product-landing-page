@@ -51,11 +51,6 @@
                     margin-right: 15px;
                     cursor: pointer;
                 }
-
-                span{
-                    font-size: 15px;
-                    font-weight: 500;
-                }
             }
         }
         .right{
@@ -100,4 +95,40 @@
             }
         }
     }  
+}
+
+@media only screen and (max-width: 655px) {
+    .topbar {
+        .wrapper{
+            .left{
+                .itemContainer {
+                    margin-left: 0;
+                    .icon {
+                        font-size: 25px;
+                        margin-right: 7.5px;
+                    }
+                }
+                .itemContainer:last-of-type {
+                    margin-left: 20px;
+                    p {
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .topbar {
+        .wrapper{
+            .left{
+                .itemContainer {
+                    display: none;
+                }
+            }
+        }
+
+    }
 }

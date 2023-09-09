@@ -124,6 +124,7 @@
 
 @media only screen and (max-width: 760px) {
     #purchase {
+        max-height: none;
         flex-direction: column;
 
         .left {

@@ -70,6 +70,12 @@
         }
     }
 
+    @media only screen and (max-width: 760px) {
+        .intro {
+            height: auto!important;
+        }
+    }
+
     @media only screen and (max-width: 500px) {
 
         #icon1 {

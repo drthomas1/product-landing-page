@@ -57,50 +57,7 @@ export default function VideoGallery() {
 
 
   return (
-    <div className="video-gallery" id='video' style={{ backgroundImage: `url('${backImage}')` }}>
-      <div onClick={openModal} className="video-button">
-          <BsYoutube className="icons" />
-        {modal ? (
-          <section className="modal__bg" >
-            <div className="modal__align">
-              <div className="modal__content" modal={modal} >
-                <IoCloseOutline
-                  className="modal__close"
-                  arial-label="Close modal"
-                  onClick={setModal}
-                />
-                <div className="modal__video-align">
-                  {videoLoading ? (
-                    <div className="modal__spinner">
-                      <BiLoaderAlt
-                        className="modal__spinner-style"
-                        fadein="none"
-                      />
-                    </div>
-                  ) : null}
-                  <iframe 
-                    className="modal__video-style"
-                    onLoad={spinner}
-                    loading="lazy"
-                    width="100%"
-                    height="100%"
-                    src={videoSrc}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </section>
-        ) : null}
-      </div>
-
-
-      {/* <div className="button">
-        <BsYoutube className="icons" />
-      </div> */}
+    <div className="video-gallery" id='video'>
       <div className="left">
         <h1>VIDEOS</h1>
         <br />
@@ -131,9 +88,48 @@ export default function VideoGallery() {
           </div>
         </div>
       </div>
-      {/* <div className="right">
-      </div> */}
-      <div className="gradient"></div>
+
+      <div className='right' style={{ backgroundImage: `url('${backImage}')` }} >
+        <div onClick={openModal} className="video-button">
+            <BsYoutube className="icons" />
+          {modal ? (
+            <section className="modal__bg" >
+              <div className="modal__align">
+                <div className="modal__content" modal={modal} >
+                  <IoCloseOutline
+                    className="modal__close"
+                    arial-label="Close modal"
+                    onClick={setModal}
+                  />
+                  <div className="modal__video-align">
+                    {videoLoading ? (
+                      <div className="modal__spinner">
+                        <BiLoaderAlt
+                          className="modal__spinner-style"
+                          fadein="none"
+                        />
+                      </div>
+                    ) : null}
+                    <iframe 
+                      className="modal__video-style"
+                      onLoad={spinner}
+                      loading="lazy"
+                      width="100%"
+                      height="100%"
+                      src={videoSrc}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          ) : null}
+        </div>
+        <div className="gradient"></div>
+      </div>
     </div>
   )
 }

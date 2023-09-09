@@ -11,7 +11,7 @@
       .left-inner{
         display: flex;
         flex-direction: column;
-        margin: 50px 10% 0 20%;
+        margin: 50px 10% 5% 20%;
         
 
         p, ul {
@@ -70,9 +70,42 @@
 
   @media only screen and (max-width: 760px) {
     #about {
-        
+      height: auto!important;
+      flex-wrap: wrap-reverse;
+      
+
+      .left {
+        flex-grow: 1;
+        min-width: 500px;
+
+        .left-inner {
+          margin-left: 10%;
+        }
+      }
+      .right {
+        flex-grow: 1;
+        min-width: 500px;
+        max-height: calc(50vh - 35px);
+        img {
+        }
+      }
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 500px) {
+  #about {
+    height: auto!important;
+    flex-wrap: wrap-reverse;
+    
+
+    .left {
+      min-width: 100px;
+    }
+  }
+}
+
+@media only screen and (max-height: 759px) {
+  #about {
+    height: auto!important;
+  }
 }

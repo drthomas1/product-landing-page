@@ -30,9 +30,7 @@ export default function Gallery() {
         slidesPerView={'auto'}
         centeredSlides={true}
         spaceBetween={0}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={true}
         thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}} //fixed the issue https://stackoverflow.com/questions/73046820/swiper-react-cannot-convert-undefined-or-null-to-object
         modules={[FreeMode, Navigation, Thumbs, Pagination]}
         className="mySwiper2"
