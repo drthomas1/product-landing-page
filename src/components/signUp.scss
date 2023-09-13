@@ -1,5 +1,5 @@
 #signup {
-    max-height: calc(50vh - 35px);
+    height: auto!important;
     background: white;
     display: flex;
     gap: 25px;
@@ -13,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left: 10%;
+        margin: 50px 10% 5% 10%;
 
         p {
             line-height: 1.4;
@@ -67,6 +67,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 10%;
+        padding: 2.5px;
 
         img {
             max-width: 100%;
@@ -80,7 +81,6 @@
 @media only screen and (max-width: 760px) {
     #signup {
         flex-direction: column;
-        max-height: calc(100vh - 70px);
         .right {
             margin-right: 0;
         }

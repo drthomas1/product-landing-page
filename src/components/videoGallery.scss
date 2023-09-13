@@ -172,8 +172,8 @@
         .playlist {
             display: flex;
             flex-direction: column;
-            max-height: 400px;
             overflow-y: scroll;
+            max-height: 600px;
 
             .thumb-and-title {
                 display: flex;
@@ -216,6 +216,7 @@
         margin: 25px 10% 5% 10%;
 
         .playlist {
+          max-height: 400px;
 
           .thumb-and-title {
             background: none;
@@ -235,10 +236,55 @@
 
      }
      .right {
-      min-height: 500px;
+      min-height: 50vh;
 
       .gradient {
       }
      }
   } 
+}
+
+@media only screen and  (max-height: 775px) {
+  .video-gallery {
+
+    .left {
+      position: static;
+      height: 100%;
+      overflow-y: hidden;
+      margin: 50px 2.5% 5% 10%;
+
+      .playlist {
+        max-height: 70%;
+        overflow-y: scroll;
+
+        .thumb-and-title {
+          background: none;
+          border-bottom: 2px solid white;
+          border-radius: 0;
+          margin-bottom: 0;
+
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .right {
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) and (max-height: 775px) {
+  .video-gallery {
+
+    .left {
+
+      .playlist {
+        max-height: 400px;
+        overflow-y: scroll;
+      }
+    }
+  }
 }

@@ -65,6 +65,9 @@ export default function Gallery() {
         <SwiperSlide>
           <img src="assets/excalibur10.png" alt="excalibur10" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img src="assets/excalibur12.jpg" alt="excalibur12" />
+        </SwiperSlide>
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -105,6 +108,9 @@ export default function Gallery() {
         </SwiperSlide>
         <SwiperSlide>
           <img src="assets/excalibur10.png" alt="excalibur10 thumbnail" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="assets/excalibur12.jpg" alt="excalibur12 thumbnail" />
         </SwiperSlide>
       </Swiper>
     </div>
