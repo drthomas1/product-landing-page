@@ -1,4 +1,5 @@
 import "./purchase.scss";
+import './animations.scss';
 
 export default function Purchase() {
   return (
@@ -7,7 +8,7 @@ export default function Purchase() {
         <div className="left-inner">
           <div className="text-container">
               <h1>EXCALIBUR</h1>
-              <button>OWN ON DIGITAL</button>
+              <button className="button-anim-2"><span>OWN ON DIGITAL</span></button>
           </div>
           <div className="image-container">
               <img src="assets/excalibur-digital.jpg" alt="" />
@@ -18,7 +19,7 @@ export default function Purchase() {
         <div className="right-inner">
           <div className="text-container">
             <h1>EXCALIBUR</h1>
-            <button>BLU-RAY & DVD</button>
+            <button className="button-anim"><span>BLU-RAY & DVD</span></button>
           </div>
           <div className="image-container">
             <img src="assets/excalibur-blu-ray.png" alt="" />

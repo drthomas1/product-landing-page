@@ -1,4 +1,5 @@
 import "./related.scss";
+import './animations.scss';
 
 export default function Related() {
   const backImage = 'assets/excalibur-poster8.jpg'
@@ -10,14 +11,14 @@ export default function Related() {
             <h2>RELATED</h2>
             <h1>EXCALIBUR: BEHIND THE MOVIE</h1>
             <h3>NOW STREAMING</h3>
-            <button>VIEW DETAILS</button>
+            <button className="button-anim"><span>VIEW DETAILS</span></button>
         </div>
       </div>
       <div className="right" style={{ backgroundImage: `url('${backImage2}')` }} >
         <div className="text-container">
           <h2>DIRECTOR</h2>
           <h1>MORE BY JOHN BOORMAN</h1>
-          <button>VIEW DETAILS</button>
+          <button className="button-anim"><span>VIEW DETAILS</span></button>
         </div>
       </div>
       <div className="gradient"></div>

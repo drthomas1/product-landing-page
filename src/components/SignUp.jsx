@@ -1,4 +1,5 @@
 import "./signUp.scss";
+import './animations.scss';
 import { useState, useEffect } from "react";
 
 export default function SignUp() {
@@ -62,16 +63,18 @@ function assignNumYear(){
 }
 
 function validDate() {
-  const button = document.getElementById('the-button');
+  const button = document.querySelector('.the-button');
 
   if((dayNum > 0 && dayNum < 32 ) && (monthNum > 0 && monthNum < 13) && (yearNum >  1900 && yearNum < 2023 )){
           button.style.color = 'black';
           button.style.border = '2px solid black';
           button.style.cursor = 'pointer';
+          button.classList.add("button-anim-3");
       }else{
         button.style.color = 'lightgray';
         button.style.border = '2px solid lightgray';
         button.style.cursor = 'default';
+        button.classList.remove("button-anim-3");
       }
 
     }
@@ -147,7 +150,7 @@ function validDate() {
           </div>
         </div>
         <br />
-        <button id="the-button">NEXT</button>
+        <button className="the-button" ><span>NEXT</span></button>
       </div>
       <div className="right">
         <img src="/assets/excalibur logo2.webp" className="logos" id="icon1" alt="warnerbros" />
