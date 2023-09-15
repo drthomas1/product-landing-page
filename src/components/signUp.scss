@@ -67,7 +67,6 @@
         justify-content: center;
         align-items: center;
         margin-right: 10%;
-        padding: 2.5px;
 
         img {
             max-width: 100%;
@@ -82,7 +81,7 @@
     #signup {
         flex-direction: column;
         .right {
-            margin-right: 0;
+            margin-left: 10%;
         }
         
     }

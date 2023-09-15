@@ -10,7 +10,7 @@ export default function Intro() {
       </video>
       <div className='content'>
         <img src="/assets/warnerbroswhite.png" id="icon1" alt="warnerbros" />
-        <img src="assets/excalibur logo2.webp" alt="excalibur" />
+        <img src="assets/excalibur logo2.webp" id="icon2" alt="excalibur" />
         <a href="https://youtu.be/6QR6_17mn5s" target="_blank" rel="noreferrer">
           <button>WATCH TRAILER</button>
         </a>

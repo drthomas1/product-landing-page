@@ -45,7 +45,7 @@ export default function Gallery() {
           <img src="assets/excalibur3.jpg" alt="excalibur3" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="assets/excalibur4.jpeg" alt="excalibur4" />
+          <img src="assets/excalibur4.jpg" alt="excalibur4" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="assets/excalibur5.jpg" alt="excalibur5" />
@@ -89,7 +89,7 @@ export default function Gallery() {
           <img src="assets/excalibur3.jpg" alt="excalibur3 thumbnail" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="assets/excalibur4.jpeg" alt="excalibur4 thumbnail" />
+          <img src="assets/excalibur4.jpg" alt="excalibur4 thumbnail" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="assets/excalibur5.jpg" alt="excalibur5 thumbnail" />

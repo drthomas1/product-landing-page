@@ -1,4 +1,5 @@
 .intro{
+    min-height: 350px;
     width: 100%;
     background-color: black;
 
@@ -50,6 +51,7 @@
 
     .overlay {
         position: absolute;
+        min-height: 350px;
         top: 0;
         left: 0;
         width: 100%;
@@ -59,31 +61,19 @@
       }
 
 
-    @media only screen and (max-width: 800px) {
-    #icon1 {
-        margin-bottom: 25px;
-        max-width: 50%;
-    }
-    
-    .bg-video {
-        display:none !important;
-    }
-    }
-
-    @media only screen and (max-width: 760px) {
-        .intro {
-            height: auto!important;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-height: 600px), (max-width: 800px) {
 
         #icon1 {
+            width: 200px;
             margin-bottom: 50px;
         }
 
+        #icon2 {
+            width: 300px;
+        }
+
         button {
-            margin-top: 50px;
+            margin-top: 12.5px;
         }
     }
 
