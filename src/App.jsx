@@ -6,7 +6,6 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import Related from "./components/Related";
 import VideoGallery from "./components/VideoGallery";
-import Test from "./components/Test";
 import SignUp from './components/SignUp';
 import Footer from "./components/Footer";
 import './App.scss';
@@ -23,7 +22,6 @@ function App() {
         <Purchase/>
         <About />
         <VideoGallery />
-        {/* <Test /> */}
         <Gallery />
         <Related />
         <SignUp />
