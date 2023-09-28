@@ -63,6 +63,10 @@
 
     @media only screen and (max-height: 600px), (max-width: 800px) {
 
+        .bg-video {
+            display: none;
+        }
+
         #icon1 {
             width: 200px;
             margin-bottom: 50px;

@@ -1,17 +1,13 @@
 import "./signUp.scss";
-import './animations.scss';
+import '../animations.scss';
 import { useState, useEffect } from "react";
 
-export default function SignUp() {
+export default function SignUp( {menuOpen, setMenuOpen} ) {
 
   const [dayNum, setDayNum] = useState(0);
   const [monthNum, setMonthNum] = useState(0);
   const [yearNum, setYearNum] = useState(0);
-  // console.log(dayNum);
-  // console.log(monthNum);
-  // console.log(yearNum);
   
-
   useEffect(() => {
     validDate();
   }, [dayNum, monthNum, yearNum]);
@@ -21,8 +17,7 @@ export default function SignUp() {
             object.target.value = object.target.value.slice(0, object.target.maxLength)
           }
     }
-
-    
+  
     function assignNum(){
       let num;
       let inputVal = document.getElementById("day").value;
@@ -79,8 +74,6 @@ function validDate() {
 
     }
   
-
-
   function handleChange(obj){
     maxLengthCheck(obj);
     assignNum();
@@ -100,11 +93,11 @@ function validDate() {
   }
 
   return (
-    <div className="signup" id="signup">
+    <div className="signup" id="signup" onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="left">
         <h1>SIGN UP!</h1>
         <br />
-        <p>Lorem ipsum dolor ipsum dolor lorem ipsum dolor nintendo sega mastersystem geronimo pincnics fidelity dignity forsooth grain silo twenty.</p>
+        <p>Lorem ipsum dolor ipsum dolor lorem ipsum dolor nintendo sega mastersystem geronimo picnics emperor penguin grain silo twenty three.</p>
         <br />
         <h5>ENTER DATE OF BIRTH</h5>
         <br />

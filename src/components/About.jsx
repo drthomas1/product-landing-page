@@ -1,14 +1,13 @@
 import "./about.scss";
 import { SiWarnerbros } from "react-icons/si";
 
-export default function About() {
+export default function About( {menuOpen, setMenuOpen} ) {
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="left">
         <div className="left-inner">
           <h1>ABOUT</h1>
           <br />
-          {/* <p>Raised by Merlin, young Arthur draws the mystical sword of Excalibur from the stone and becomes King. He grows to manhood and with his wife Guenevere and first knight Lancelot unites the country and founds the Knights of the Round Table. But the love between Lancelot and Guenevere, and the treachery of his sister Morgana and son Mordred cause King Arthur's pride to jeopardize the kingdom. An epic battle between the knights of good and evil decides the fate of Camelot.</p> */}
           <p>Merlin the magician helps Arthur Pendragon unite the Britons around the Round Table of Camelot, even as dark forces conspire to tear it apart.</p>
           <br />
           <h4>Cast:</h4>

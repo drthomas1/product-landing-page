@@ -1,10 +1,10 @@
 import './intro.scss';
-import './animations.scss';
+import '../animations.scss';
 
-export default function Intro() {
+export default function Intro( {menuOpen, setMenuOpen} ) {
 
   return (
-    <div className='intro' id="intro">
+    <div className='intro' id="intro" onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="overlay"></div>
       <video autoPlay loop muted className='bg-video'>
         <source src="assets/excaliburclip2.mp4" type='video/mp4'/>

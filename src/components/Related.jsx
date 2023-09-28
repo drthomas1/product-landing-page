@@ -1,11 +1,11 @@
 import "./related.scss";
-import './animations.scss';
+import '../animations.scss';
 
-export default function Related() {
+export default function Related( {menuOpen, setMenuOpen} ) {
   const backImage = 'assets/excalibur-poster8.jpg'
   const backImage2 = 'assets/john-boorman-photo2.jpg';
   return (
-    <div className="related" id="related">
+    <div className="related" id="related" onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="left" style={{ backgroundImage: `url('${backImage}')` }}>
         <div className="text-container">
             <h2>RELATED</h2>

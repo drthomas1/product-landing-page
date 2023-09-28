@@ -8,7 +8,7 @@ import videoData from './videoData';
 
 import "./videoGallery.scss";
 
-export default function VideoGallery() {
+export default function VideoGallery( {menuOpen, setMenuOpen} ) {
 
   const [backImgAndVideoSrc, setBackImgAndVideoSrc] = useState(
     {
@@ -28,7 +28,7 @@ export default function VideoGallery() {
     setVideoLoading(!videoLoading);
   };
 
-    //to stop mouse scroll when video modal is on
+  //to stop mouse scroll when video modal is on
   useEffect(() => {
     if(modal){
       document.body.style.overflow = "hidden";
@@ -42,17 +42,14 @@ export default function VideoGallery() {
     return (
      <Video 
       key={video.id}
-      // setBackImage={setBackImage}
-      // setVideoSrc={setVideoSrc}
       setBackImgAndVideoSrc={setBackImgAndVideoSrc}
       {...video}
      /> 
     )
   })
 
-
   return (
-    <div className="video-gallery" id='video'>
+    <div className="video-gallery" id='video' onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="left">
         <h1>VIDEOS</h1>
         <br />
@@ -60,7 +57,6 @@ export default function VideoGallery() {
           {videos}
         </div>
       </div>
-
       <div className='right' style={{ backgroundImage: `url('${backImgAndVideoSrc.backImage}')` }} >
         <div onClick={openModal} className="video-button">
             <BsYoutube className="icons" />
@@ -71,7 +67,7 @@ export default function VideoGallery() {
                   <IoCloseOutline
                     className="modal__close"
                     arial-label="Close modal"
-                    onClick={setModal}
+                    onClick={(setModal)}
                   />
                   <div className="modal__video-align">
                     {videoLoading ? (

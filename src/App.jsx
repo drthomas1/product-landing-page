@@ -18,14 +18,14 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <Intro />
-        <Purchase/>
-        <About />
-        <VideoGallery />
-        <Gallery />
-        <Related />
-        <SignUp />
-        <Footer />
+        <Intro menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Purchase menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <About menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <VideoGallery menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Gallery menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Related menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <SignUp menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Footer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
     </div>
   );

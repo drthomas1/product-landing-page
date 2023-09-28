@@ -22,19 +22,14 @@
     > *{
         width: 100vw;
         height: calc(100vh - 70px);
-        scroll-snap-align: start;
+        scroll-snap-align: end;
         box-sizing: border-box;
     }
 }
 
 @media only screen and (max-width: 760px), (max-height: 759px) {
     .sections {
-        scroll-behavior: smooth;
         scroll-snap-type: none;
-        scrollbar-width: none; // for firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
     
         > *{
             scroll-snap-align: none;

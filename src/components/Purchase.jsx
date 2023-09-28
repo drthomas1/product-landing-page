@@ -1,9 +1,9 @@
 import "./purchase.scss";
-import './animations.scss';
+import '../animations.scss';
 
-export default function Purchase() {
+export default function Purchase( {menuOpen, setMenuOpen} ) {
   return (
-    <div className="purchase" id="purchase">
+    <div className="purchase" id="purchase" onClick={ (menuOpen)=>setMenuOpen(!menuOpen) }>
       <div className="left">
         <div className="left-inner">
           <div className="text-container">
