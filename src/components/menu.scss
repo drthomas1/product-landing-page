@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     right: -300px;
-    z-index: 1000;
+    z-index: 89;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +36,9 @@
             &:hover {
                 font-weight: 500;
             }
+            &:last-of-type {
+                margin-bottom: 0;
+              }
         }
     }
 }
@@ -44,14 +47,28 @@
     .menu {
         width: 100%;
         right: -100%;
+        align-items: flex-end;
     }
 }
 
-@media only screen and (max-height: 425px) {
+@media only screen and (max-height: 545px) {
+    .menu {
+        
+        ul {
+            font-size: 22.5px;
+        }
+    }
+}
+
+@media only screen and (max-height: 465px) {
     .menu {
         
         ul {
             font-size: 16px;
+
+            li {
+                margin-bottom: 10px;
+            }
         }
     }
 }

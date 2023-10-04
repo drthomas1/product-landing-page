@@ -10,6 +10,8 @@ import "./videoGallery.scss";
 
 export default function VideoGallery( {menuOpen, setMenuOpen} ) {
 
+  let videoButton = document.getElementById('video-button');
+
   const [backImgAndVideoSrc, setBackImgAndVideoSrc] = useState(
     {
       backImage: 'assets/excalibur-background1.jpg',
@@ -32,9 +34,13 @@ export default function VideoGallery( {menuOpen, setMenuOpen} ) {
   useEffect(() => {
     if(modal){
       document.body.style.overflow = "hidden";
+      videoButton.style.zIndex = '100';
     }
     if(!modal){
-    document.body.style.overflow = 'unset';
+      document.body.style.overflow = 'unset';
+      if(videoButton){
+        videoButton.style.zIndex = '10';
+      }
     }
     }, [modal]); //Here is an example of a useEffect Hook that is dependent on a variable. If the modal variable updates, the effect will run again
 
@@ -58,7 +64,7 @@ export default function VideoGallery( {menuOpen, setMenuOpen} ) {
         </div>
       </div>
       <div className='right' style={{ backgroundImage: `url('${backImgAndVideoSrc.backImage}')` }} >
-        <div onClick={openModal} className="video-button">
+        <div onClick={openModal} className="video-button" id="video-button" >
             <BsYoutube className="icons" />
           {modal ? (
             <section className="modal__bg" >

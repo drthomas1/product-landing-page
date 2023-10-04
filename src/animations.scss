@@ -8,14 +8,14 @@
     border: 2px solid white;
     font-weight: 700;
     padding: 12.5px 25px;
-    z-index: 998;
+    z-index: 19;
     cursor: pointer;
 
 }
 
 .button-anim span{
     position: relative;
-    z-index: 999;
+    z-index: 20;
 }
 
 .button-anim:after{
@@ -51,14 +51,14 @@
     border: 2px solid black;
     font-weight: 700;
     padding: 12.5px 25px;
-    z-index: 998;
+    z-index: 19;
     cursor: pointer;
 
 }
 
 .button-anim-2 span{
     position: relative;
-    z-index: 999;
+    z-index: 20;
 }
 
 .button-anim-2:after{
@@ -88,12 +88,12 @@
 .button-anim-3 {
     position: relative;
     transition: all .35s;
-    z-index: 998;
+    z-index: 19;
 }
 
 .button-anim-3 span{
     position: relative;
-    z-index: 999;
+    z-index: 20;
 }
 
 .button-anim-3:after{
